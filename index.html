@@ -12,6 +12,7 @@
     />
     <title>Basic-Website</title>
   </head>
+
   <body>
     <!-- navbar section -->
     <section id="nav-bar">
@@ -34,19 +35,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#top">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#about-us">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#testimonials">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Twitter</a>
+                <a class="nav-link" href="#social-media">Social</a>
               </li>
             </ul>
           </div>
@@ -79,7 +80,6 @@
     </section>
 
     <!-- services section -->
-
     <section id="services">
       <div class="container text-center">
         <h1 class="title">WHAT WE DO?</h1>
@@ -138,6 +138,7 @@
         </div>
       </div>
     </section>
+
     <!-- testimonial section -->
     <section id="testimonials">
       <div class="container">
@@ -168,6 +169,7 @@
         </div>
       </div>
     </section>
+
     <!-- social-media section -->
     <section id="social-media">
       <div class="container text-center">
@@ -212,5 +214,13 @@
         <p class="copyright">CopyRight: @Shincode</p>
       </div>
     </section>
+
+    <!-- scroll.js -->
+    <script src="smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+      });
+    </script>
   </body>
 </html>
